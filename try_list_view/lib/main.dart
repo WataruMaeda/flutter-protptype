@@ -9,7 +9,14 @@ class Home extends StatelessWidget {
       return new MaterialApp(
         title: "List View Sample",
         home: new Center(
-          child: new Text("Helloeeee"),
+          child: new Scaffold(
+            appBar: new AppBar(
+              title: new Text("List View Sample"),
+            ),
+            body: new Center(
+              child: new Text("Helloeeee"),
+            ),
+          ),
         ),
       );
     }
