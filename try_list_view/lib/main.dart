@@ -13,11 +13,19 @@ class Home extends StatelessWidget {
             appBar: new AppBar(
               title: new Text("List View Sample"),
             ),
-            body: new Center(
-              child: new Text("Helloeeee"),
-            ),
+            body: new ListWidget()
           ),
         ),
+      );
+    }
+}
+
+class ListWidget extends StatelessWidget {
+  @override
+    Widget build(BuildContext context) {
+      // TODO: implement build
+      return new Center(
+        child: new Text("123", style: new TextStyle(fontSize: 18.0),),
       );
     }
 }
