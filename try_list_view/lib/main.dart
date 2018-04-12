@@ -24,8 +24,11 @@ class ListWidget extends StatelessWidget {
   @override
     Widget build(BuildContext context) {
       // TODO: implement build
-      return new Center(
-        child: new Text("123", style: new TextStyle(fontSize: 18.0),),
+      return new ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, rowNumber) {
+          return new Text("Row");
+        },
       );
     }
 }
